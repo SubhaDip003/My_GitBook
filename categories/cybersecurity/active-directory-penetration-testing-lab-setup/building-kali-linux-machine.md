@@ -24,7 +24,7 @@ layout:
 
 Download Kali Linux ISO Image from [here](https://www.kali.org/get-kali/#kali-installer-images).
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Open VMware Workstation and click on "Create a New Virtual Machine":
 
@@ -220,7 +220,7 @@ Then run the script:
 bash ./setup.sh
 ```
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 After completing the tool installation we can see that a folder called "Tools" is created on our user's home directory:
 

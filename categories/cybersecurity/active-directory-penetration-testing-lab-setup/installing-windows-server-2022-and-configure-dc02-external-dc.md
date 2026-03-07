@@ -569,7 +569,7 @@ Click on the notification:
 
 AD CS Configuration Window is open, Click on Next:
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Select Certificate Authority Web Enrollment and Click on Next:
 
