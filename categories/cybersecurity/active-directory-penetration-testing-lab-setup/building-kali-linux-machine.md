@@ -1,0 +1,236 @@
+---
+description: >-
+  Step-by-step guide to install & Configure Kali Linux Machine on VMWare
+  Workstation.
+layout:
+  width: wide
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: false
+  pagination:
+    visible: true
+  metadata:
+    visible: false
+  tags:
+    visible: true
+---
+
+# Building Kali Linux Machine
+
+Download Kali Linux ISO Image from [here](https://www.kali.org/get-kali/#kali-installer-images).
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Open VMware Workstation and click on "Create a New Virtual Machine":
+
+<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+
+Then Select "Typical" and click on Next:
+
+<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+
+Then select "I will install the Operating System Later" and click on Next:
+
+<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+
+Then, select Operating System "Linux" and Version: "Debian 12 x64" and click on Next:
+
+<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+
+Then, Enter machine name and select installation location:
+
+<figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
+
+Then give storage and select "Store Virtual Disk as a Single File" and click on Next:
+
+<figure><img src="../../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
+
+Then click on "Customize Hardware.."
+
+<figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
+
+Then, Configure RAM "3-4 GB", Select ISO Image and Network Adapter "Bridged" then click on close and then click on Finish:
+
+<figure><img src="../../../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
+
+Then click on "Power on this virtual machine":
+
+<figure><img src="../../../.gitbook/assets/9.png" alt=""><figcaption></figcaption></figure>
+
+Select "Graphical install" and press Enter:
+
+<figure><img src="../../../.gitbook/assets/10.png" alt=""><figcaption></figcaption></figure>
+
+Select Language English and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/11.png" alt=""><figcaption></figcaption></figure>
+
+Then select location and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/12.png" alt=""><figcaption></figcaption></figure>
+
+Then select keyboard and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/13.png" alt=""><figcaption></figcaption></figure>
+
+Next, leave as default and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/14.png" alt=""><figcaption></figcaption></figure>
+
+Again click on Continue:
+
+<figure><img src="../../../.gitbook/assets/15.png" alt=""><figcaption></figcaption></figure>
+
+Then enter user name and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/16.png" alt=""><figcaption></figcaption></figure>
+
+Again enter username and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/17.png" alt=""><figcaption></figcaption></figure>
+
+Next, enter password and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/18.png" alt=""><figcaption></figcaption></figure>
+
+Next page, select "Guided-use entire disk" and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/19.png" alt=""><figcaption></figcaption></figure>
+
+Next page, click on Continue:
+
+<figure><img src="../../../.gitbook/assets/20.png" alt=""><figcaption></figcaption></figure>
+
+Next page, select "All files in one Partition" and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/21.png" alt=""><figcaption></figcaption></figure>
+
+Then click on Continue:
+
+<figure><img src="../../../.gitbook/assets/22.png" alt=""><figcaption></figcaption></figure>
+
+Next page, select "Yes" and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/23.png" alt=""><figcaption></figcaption></figure>
+
+Kali Linux base system installation is started:
+
+<figure><img src="../../../.gitbook/assets/24.png" alt=""><figcaption></figcaption></figure>
+
+After completing this, on the next page leave the default everything and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/25.png" alt=""><figcaption></figcaption></figure>
+
+The software installation process will be started:
+
+<figure><img src="../../../.gitbook/assets/26.png" alt=""><figcaption></figcaption></figure>
+
+After completing this select GRUB boot loader option "Yes" and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/27.png" alt=""><figcaption></figcaption></figure>
+
+Next page, select "/dev/sda" and click on Continue:
+
+<figure><img src="../../../.gitbook/assets/28.png" alt=""><figcaption></figcaption></figure>
+
+After successfully completing installation Next click on Continue:
+
+<figure><img src="../../../.gitbook/assets/29.png" alt=""><figcaption></figcaption></figure>
+
+Now Kali Linux Machine is Installed Successfully. After that open terminal and update and upgrade the system:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+<figure><img src="../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
+
+### Installing Tools
+
+In this section we look at some of the tools we will be using and installing those different tools. Some of the tools that are installed are:
+
+* Sublime Text
+* Bloodhound Legacy
+* Impacket
+* Tools from Impacket ShutDown Repo
+* Terminator
+
+So, we create a file called `setup.sh` and paste the script in the file and run it:
+
+```
+nano setup.sh
+```
+
+Copy and paste the below script:
+
+```bash
+#!/bin/bash
+cd ~
+git clone https://github.com/fortra/impacket.git
+cd impacket
+pip3 install . --break-system-packages
+cd ~
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo tee /etc/apt/keyrings/sublimehq-pub.asc > /dev/null
+echo -e 'Types: deb\nURIs: https://download.sublimetext.com/\nSuites: apt/stable/\nSigned-By: /etc/apt/keyrings/sublimehq-pub.asc' | sudo tee /etc/apt/sources.list.d/sublime-text.sources
+sudo apt-get update
+sudo apt-get install sublime-text
+mkdir ~/Tools
+cd ~/Tools
+wget https://github.com/SpecterOps/BloodHound-Legacy/releases/download/v4.3.1/BloodHound-linux-x64.zip
+unzip BloodHound-linux-x64.zip
+rm -rf BloodHound-linux-x64.zip
+sudo apt install neo4j
+sudo apt install terminator
+wget https://github.com/int0x33/nc.exe/raw/refs/heads/master/nc64.exe
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
+wget https://github.com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_windows_amd64.zip
+tar -xvf ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz
+rm -rf LICENSE
+unzip ligolo-ng_agent_0.8.2_windows_amd64.zip
+rm -rf LICENSE
+wget https://github.com/r3motecontrol/Ghostpack-CompiledBinaries/raw/refs/heads/master/Rubeus.exe
+wget https://github.com/ParrotSec/mimikatz/blob/master/x64/mimikatz.exe
+wget https://raw.githubusercontent.com/ivan-sincek/php-reverse-shell/refs/heads/master/src/reverse/php_reverse_shell.php
+cd ~/.local/bin
+wget https://raw.githubusercontent.com/dirkjanm/PKINITtools/refs/heads/master/gettgtpkinit.py
+chmod +x gettgtpkinit.py
+wget https://raw.githubusercontent.com/dirkjanm/PKINITtools/refs/heads/master/getnthash.py
+chmod +x getnthash.py
+wget https://raw.githubusercontent.com/dirkjanm/PKINITtools/refs/heads/master/gets4uticket.py
+chmod +x gets4uticket.py
+wget https://raw.githubusercontent.com/ShutdownRepo/pywhisker/refs/heads/main/pywhisker/pywhisker.py
+chmod +x pywhisker.py
+wget https://raw.githubusercontent.com/ShutdownRepo/targetedKerberoast/refs/heads/main/targetedKerberoast.py
+chmod +x targetedKerberoast.py
+sudo apt update && sudo apt upgrade
+sudo updatedb
+  
+```
+
+Press ctrl+x  then click y on the keyboard and hit enter.
+
+Then run the script:
+
+```bash
+bash ./setup.sh
+```
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+After completing the tool installation we can see that a folder called "Tools" is created on our user's home directory:
+
+```bash
+ls 
+cd Tools
+unzip ligolo-ng_agent_0.8.2_windows_amd64.zip 
+tar -xvf ligolo-ng_proxy_0.8.2_linux_amd64.tar.gz 
+mv php_reverse_shell.php win_php_revshell.php
+ls -all
+```
+
+<figure><img src="../../../.gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
