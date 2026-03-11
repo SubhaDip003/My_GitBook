@@ -52,9 +52,52 @@ Active Directory also includes:
 
 ## Active Directory Domain Service (AD DS)
 
-**Active Directory Domain Services** is the core component of **Active Directory** that provides **directory services for managing users, computers, and other resources in a network**. It works as a centralized system where all information about network objects—such as user accounts, groups, computers, and security policies—is stored and organized in a directory database.
+**Active Directory Domain Services** is the core component of **Active Directory** that provides **directory services for managing users, computers, and other resources in a network**. It works as a centralized system where all information about network "objects"—such as user, groups, computers, and security policies—is stored and organized in a directory database.
 
 This service runs on **Windows Server** and allows administrators to control authentication and authorization across the network. When a user logs into a domain computer, AD DS verifies the user’s credentials and determines what resources they are allowed to access. It also enables administrators to manage permissions, apply group policies, and organize network objects in a structured hierarchy using domains, organizational units, and forests.
+
+In **Active Directory**, **objects** are the **individual resources stored in the directory database**. Each object represents a network resource and contains attributes that describe it.
+
+Examples of Active Directory objects include **users, computers, groups, printers, and shared folders**. These objects are used to manage identities, control access, and organize resources within a domain.
+
+#### _Users_
+
+Users are one of the most common object types in Active Directory. Users are one of the objects known as **security principals**, meaning that they can be authenticated by the domain and can be assigned privileges over **resources** like files or printers. You could say that a security principal is an object that can act upon resources in the network.
+
+Users can be used to represent two types of entities:
+
+* **People:** users will generally represent persons in your organisation that need to access the network, like employees.
+* **Services:** you can also define users to be used by services like IIS or MSSQL. Every single service requires a user to run, but service users are different from regular users as they will only have the privileges needed to run their specific service.
+
+#### _Machines / Computers_
+
+Machines are another type of object within Active Directory; for every computer that joins the Active Directory domain, a machine object will be created. Machines are also considered "security principals" and are assigned an account just as any regular user. This account has somewhat limited rights within the domain itself.
+
+The machine accounts themselves are local administrators on the assigned computer, they are generally not supposed to be accessed by anyone except the computer itself, but as with any other account, if you have the password, you can use it to log in.
+
+> **Note:** Machine Account passwords are automatically rotated out and are generally comprised of 120 random characters.
+
+Identifying machine accounts is relatively easy. They follow a specific naming scheme. The machine account name is the computer's name followed by a dollar sign. For example, a machine named `DC01` will have a machine account called `DC01$`.
+
+#### _Security Groups_
+
+If you are familiar with Windows, you probably know that you can define user groups to assign access rights to files or other resources to entire groups instead of single users. This allows for better manageability as you can add users to an existing group, and they will automatically inherit all of the group's privileges. Security groups are also considered security principals and, therefore, can have privileges over resources on the network.
+
+Groups can have both users and machines as members. If needed, groups can include other groups as well.
+
+Several groups are created by default in a domain that can be used to grant specific privileges to users. As an example, here are some of the most important groups in a domain:
+
+| Security Group     | Description                                                                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Domain Admins      | Users of this group have administrative privileges over the entire domain. By default, they can administer any computer on the domain, including the DCs. |
+| Server Operators   | Users in this group can administer Domain Controllers. They cannot change any administrative group memberships.                                           |
+| Backup Operators   | Users in this group are allowed to access any file, ignoring their permissions. They are used to perform backups of data on computers.                    |
+| Account Operators  | Users in this group can create or modify other accounts in the domain.                                                                                    |
+| Domain Users       | Includes all existing user accounts in the domain.                                                                                                        |
+| Domain Computers   | Includes all existing computers in the domain.                                                                                                            |
+| Domain Controllers | Includes all existing DCs on the domain.                                                                                                                  |
+
+You can obtain the complete list of default security groups from the [Microsoft documentation](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups).
 
 ## Active Directory Structure&#x20;
 
@@ -64,7 +107,7 @@ Active Directory's main components, which we use to design the hierarchy and to 
 
 The physical structure of Active Directory helps to manage the communication between servers with respect to the directory. The two physical elements of Active Directory are **domain controllers** and **sites**.
 
-#### Domain Controller (DC)
+#### _Domain Controller (DC)_
 
 A **Domain Controller** is a server that runs **Active Directory Domain Services** and is responsible for managing authentication, authorization, and directory data within a domain of **Active Directory**. It stores the Active Directory database and handles requests such as user logins, permission checks, and access to network resources. DC host other services that are complementary to AD DS as well. Those are:
 
@@ -77,7 +120,7 @@ When a user attempts to log in to a domain computer, the Domain Controller verif
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-#### Sites
+#### _Sites_
 
 In **Active Directory**, a **site** represents the **physical structure of a network**. It is used to group domain controllers and other network resources that are located in the same physical location or connected by a high-speed network.
 
@@ -89,23 +132,39 @@ A site is mainly created to manage **network traffic and replication between dom
 
 The logical parts of Active Directory include Forests, Trees, Domains, OUs and Global Catalogs.
 
-#### Domain
+#### _Domain_
 
 The basic organizational structure of the Windows Server OS networking model is the domain. A domain represents an administrative boundary. The computers, users, and other objects within a domain share a common security database.
 
-#### Tree
+#### _Tree_
 
 Multiple domains are organized into a hierarchical structure called a tree. Actually, even if you have only one domain in your organization, you still have a tree. The first domain you create in a tree is called the root domain. The next domain that you add becomes a child domain of that root. This\
 expandability of domains makes it possible to have many domains in a tree.
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-#### Forest
+#### _Forest_
 
 A forest is a group of one or more domain trees that do not form a contiguous namespace but may share a common schema and global catalog. There is always at least one forest on a network, and it is created when the first Active Directory-enabled computer (domain controller) on a network is installed. This first domain in a forest, called the forest root domain, is special because it holds the schema and controls domain naming for the entire forest. It cannot be removed from the forest without removing the entire forest itself. Also, no other domain can ever be created above the forest root domain in the forest domain hierarchy. A forest is the outermost boundary of Active Directory; the directory cannot be larger than the forest. The following figure shows an example of a forest with two trees. In this figure, Trees in a forest share the same schema, but not the same namespace.
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-Organizational Unit (OU)
+#### _Organizational Unit (OU)_
 
 Organizational Units (OUs) provide a way to create administrative boundaries within a domain. Primarily, this allows you to delegate administrative tasks within the domain. OUs serve as containers into which the resources of a domain can be placed. You can then assign administrative permissions on the OU itself. We can even nest OUs (create OUs inside other OUs) for further control.
+
+#### _Group Policy Objects (GPO)_
+
+In **Active Directory**, a **Group Policy Object (GPO)** is a collection of configuration settings used to control and manage the behavior of users and computers within a domain. It allows administrators to centrally define security settings, system configurations, and restrictions that automatically apply to users and machines in the network.
+
+A GPO works through **Active Directory Domain Services** and is usually linked to a site, domain, or organizational unit. When a user logs into a computer that is part of the domain, the system retrieves the relevant GPO settings from the domain controller and applies them. These policies can control many things such as password policies, software installation, desktop restrictions, security configurations, and login scripts.
+
+## Authentication Methods
+
+When using Windows domains, all credentials are stored in the Domain Controllers. Whenever a user tries to authenticate to a service using domain credentials, the service will need to ask the Domain Controller to verify if they are correct. Two protocols can be used for network authentication in windows domains:
+
+* **Kerberos:** Used by any recent version of Windows. This is the default protocol in any recent domain.
+* **NetNTLM:** Legacy authentication protocol kept for compatibility purposes.
+
+While NetNTLM should be considered obsolete, most networks will have both protocols enabled. Let's take a deeper look at how each of these protocols works.
+
