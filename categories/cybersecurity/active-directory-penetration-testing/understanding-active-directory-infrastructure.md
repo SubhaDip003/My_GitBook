@@ -166,6 +166,16 @@ In **Active Directory**, a **Group Policy Object (GPO)** is a collection of conf
 
 A GPO works through **Active Directory Domain Services** and is usually linked to a site, domain, or organizational unit. When a user logs into a computer that is part of the domain, the system retrieves the relevant GPO settings from the domain controller and applies them. These policies can control many things such as password policies, software installation, desktop restrictions, security configurations, and login scripts.
 
+#### _GPO distribution_
+
+GPOs are distributed to the network via a network share called `SYSVOL`, which is stored in the DC. All users in a domain should typically have access to this share over the network to sync their GPOs periodically. The SYSVOL share points by default to the `C:\Windows\SYSVOL\sysvol\` directory on each of the DCs in our network.
+
+Once a change has been made to any GPOs, it might take up to 2 hours for computers to catch up. If you want to force any particular computer to sync its GPOs immediately, you can always run the following command on the desired computer:
+
+```shell-session
+PS C:\> gpupdate /force
+```
+
 ## Authentication Methods
 
 When using Windows domains, all credentials are stored in the Domain Controllers. Whenever a user tries to authenticate to a service using domain credentials, the service will need to ask the Domain Controller to verify if they are correct. Two protocols can be used for network authentication in windows domains:
