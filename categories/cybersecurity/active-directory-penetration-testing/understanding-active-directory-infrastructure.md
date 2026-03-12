@@ -99,6 +99,17 @@ Several groups are created by default in a domain that can be used to grant spec
 
 You can obtain the complete list of default security groups from the [Microsoft documentation](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups).
 
+#### _Organizational Unit (OU)_
+
+Organizational Units (OUs) provide a way to create administrative boundaries within a domain. Primarily, this allows you to delegate administrative tasks within the domain. OUs serve as containers into which the resources of a domain can be placed. You can then assign administrative permissions on the OU itself. We can even nest OUs (create OUs inside other OUs) for further control.
+
+#### _Security Groups vs OUs_
+
+You are probably wondering why we have both groups and OUs. While both are used to classify users and computers, their purposes are entirely different:
+
+* OUs are handy for applying policies to users and computers, which include specific configurations that pertain to sets of users depending on their particular role in the enterprise. Remember, a user can only be a member of a single OU at a time, as it wouldn't make sense to try to apply two different sets of policies to a single user.
+* Security Groups, on the other hand, are used to grant permissions over resources. For example, you will use groups if you want to allow some users to access a shared folder or network printer. A user can be a part of many groups, which is needed to grant access to multiple resources.
+
 ## Active Directory Structure&#x20;
 
 Active Directory's main components, which we use to design the hierarchy and to optimize network traffic, are its logical structure and its physical structure. The logical structure, which simply organizes network resources, consists of OUs, domains, trees, and forests. The logical structure helps you design a network hierarchy that suits your organizational needs. We use the physical structure, which consists of sites and domain controllers, to manage and optimize network traffic by customizing the network configuration.
@@ -148,10 +159,6 @@ expandability of domains makes it possible to have many domains in a tree.
 A forest is a group of one or more domain trees that do not form a contiguous namespace but may share a common schema and global catalog. There is always at least one forest on a network, and it is created when the first Active Directory-enabled computer (domain controller) on a network is installed. This first domain in a forest, called the forest root domain, is special because it holds the schema and controls domain naming for the entire forest. It cannot be removed from the forest without removing the entire forest itself. Also, no other domain can ever be created above the forest root domain in the forest domain hierarchy. A forest is the outermost boundary of Active Directory; the directory cannot be larger than the forest. The following figure shows an example of a forest with two trees. In this figure, Trees in a forest share the same schema, but not the same namespace.
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
-
-#### _Organizational Unit (OU)_
-
-Organizational Units (OUs) provide a way to create administrative boundaries within a domain. Primarily, this allows you to delegate administrative tasks within the domain. OUs serve as containers into which the resources of a domain can be placed. You can then assign administrative permissions on the OU itself. We can even nest OUs (create OUs inside other OUs) for further control.
 
 #### _Group Policy Objects (GPO)_
 
