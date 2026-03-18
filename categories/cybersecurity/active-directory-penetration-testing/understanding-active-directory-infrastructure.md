@@ -185,3 +185,27 @@ When using Windows domains, all credentials are stored in the Domain Controllers
 
 While NetNTLM should be considered obsolete, most networks will have both protocols enabled. Let's take a deeper look at how each of these protocols works.
 
+### Kerberos Authentication
+
+Kerberos is the default protocol for authenticating service requests between trusted devices on a network. It’s been used since Windows 2000 and is a critical part of Windows Active Directory (AD) services and environments.
+
+When a user logs into their PC, Kerberos is used to authenticate them via mutual authentication. Both the user and the server verify their identity. Kerberos is a stateless authentication protocol—it is based on tickets instead of transmitting user passwords over the network.
+
+#### The three heads of kerberos authentication: KDC, Principle, & Resource
+
+The three heads are represented in the Kerberos protocol by these three core components:
+
+1. **Principal (Client):** A principal is simply an identity in Kerberos. It can be a User Principal, which is a normal user like user@DOMAIN, or a Service Principal, which represents a service like a web server (HTTP/server.domain@DOMAIN). In simple terms, a principal is anything that wants to prove its identity to access something in the network.
+2. Resource: **A resource is the thing the user or service wants to access after authentication. This** can be a file server, website, database, or any network service. Kerberos makes sure only authenticated principals can access these resources.
+3. **KDC (Key Distribution Center):** The KDC is the central system that handles authentication and gives out tickets. It checks identities and allows access by issuing secure tickets. It works inside a realm, which is just a group of users, services, and systems under the same authentication system (similar to a domain in Active Directory).
+
+#### Key Distribution Center
+
+The Key Distribution Center (KDC) also has more components for security. We can separate these into several parts:
+
+1. **Kerberos database:** This stores the necessary authentication information regarding the principal and the systems and services they can authenticate to.
+2. **Kerberos Authentication Server (AS):** Principals use this Kerberos service to authenticate themselves to get a ticket-granting ticket (TGT), also known as an authentication ticket (more on tickets coming up next).
+3. **Kerberos Ticket Granting Service (TGS):** This Kerberos service accepts the TGT so that clients can access their application servers.
+
+Kerberos tickets
+
