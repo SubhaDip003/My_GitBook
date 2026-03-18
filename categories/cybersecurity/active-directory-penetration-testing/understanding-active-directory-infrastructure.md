@@ -218,6 +218,8 @@ Tickets leverage asymmetric encryption. They contain two encryption keys:
 
 ### Kerberos network authentication process explained
 
+<figure><img src="../../../.gitbook/assets/Kerberos Authentication.png" alt=""><figcaption></figcaption></figure>
+
 #### Step 1 — User Login → Request to KDC (AS)
 
 The user logs into a system using a username and password. The client (user machine) sends a request to the Key Distribution Center (KDC), specifically to the Authentication Server (AS) part. This request contains the username and a timestamp encrypted using a key derived from the user’s password. This proves the user knows the correct password without sending it directly.
