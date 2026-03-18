@@ -207,5 +207,62 @@ The Key Distribution Center (KDC) also has more components for security. We can 
 2. **Kerberos Authentication Server (AS):** Principals use this Kerberos service to authenticate themselves to get a ticket-granting ticket (TGT), also known as an authentication ticket (more on tickets coming up next).
 3. **Kerberos Ticket Granting Service (TGS):** This Kerberos service accepts the TGT so that clients can access their application servers.
 
-Kerberos tickets
+#### Kerberos tickets
 
+The concept of tickets is crucial for Kerberos. This is where the magic happens. It’s the core feature of Kerberos that keeps passwords from being transmitted in clear text and allows for a single log-on to access multiple services and hosts.
+
+Tickets leverage asymmetric encryption. They contain two encryption keys:
+
+* **The ticket key:** Shared between the Kerberos infrastructure and the service requested by the principal.
+* **The session key:** Shared between the principal and the service requested. Used to encrypt and decrypt communication with the service.
+
+### Kerberos network authentication process explained
+
+#### Step 1 — User Login → Request to KDC (AS)
+
+The user logs into a system using a username and password. The client (user machine) sends a request to the Key Distribution Center (KDC), specifically to the Authentication Server (AS) part. This request contains the username and a timestamp encrypted using a key derived from the user’s password. This proves the user knows the correct password without sending it directly.
+
+#### Step 2 — KDC (AS) → Sends TGT (Response)
+
+The KDC checks the user details in Active Directory. If valid, it sends back a Ticket Granting Ticket (TGT) along with a Session Key.\
+The TGT is encrypted using the krbtgt account hash, so the user cannot read or modify it.\
+The Session Key is used for future communication.\
+Now the user is authenticated and does not need to send the password again.
+
+#### Step 3 — Client → Request TGS (Service Access Request)
+
+When the user wants to access a service (like a file share or website), the client sends a request to the Ticket Granting Server (TGS) inside the KDC.\
+This request includes:
+
+* The TGT (proof of authentication)
+* A new timestamp encrypted using the Session Key
+* The Service Principal Name (SPN) (which tells which service the user wants to access)
+
+#### Step 4 — KDC (TGS) → Sends Service Ticket (Response)
+
+The KDC verifies the TGT and the request. If everything is valid, it sends back:
+
+* A Service Ticket (TGS)
+* A Service Session Key
+
+The Service Ticket is encrypted using the service account’s password hash, so only that service can decrypt it. This ticket allows access only to that specific service.
+
+#### Step 5 — Client → Sends Service Ticket to Server (Request)
+
+Now the client sends the Service Ticket to the target server (for example, file server or web server), along with another authenticator (timestamp encrypted with the Service Session Key).
+
+This proves:
+
+* The user is authenticated
+* The request is fresh (not replayed)
+
+#### Step 6 — Server → Grants Access (Response)
+
+The server decrypts the Service Ticket using its own password hash and verifies the Service Session Key.
+
+If everything is correct:
+
+* The server trusts the user
+* Access is granted
+
+Now the user can use the service without entering credentials again.
