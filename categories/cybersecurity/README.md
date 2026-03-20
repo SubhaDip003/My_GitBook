@@ -27,7 +27,7 @@ layout:
 
 ## Penetration Testing
 
-<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><h2>Active Directory PenTesting</h2></td><td>Learn Techniques &#x26; Tools for Hacking and Pentesting Active Directory.</td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h2>Active Directory PenTesting</h2></td><td>Learn Techniques &#x26; Tools for Hacking and Pentesting Active Directory.</td><td><a href="active-directory-penetration-testing/">active-directory-penetration-testing</a></td></tr></tbody></table>
 
 ## Web Application Security
 
