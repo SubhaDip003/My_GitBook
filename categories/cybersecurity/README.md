@@ -1,5 +1,5 @@
 ---
-description: Welcome to Depertment of Cybersecurity.
+description: Welcome to Department of Cybersecurity.
 icon: shield
 layout:
   width: wide
