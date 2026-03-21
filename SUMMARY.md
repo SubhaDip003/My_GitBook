@@ -23,5 +23,7 @@
     * [TryHackMe - THM](categories/cybersecurity/tryhackme-thm/README.md)
       * [Challenges (CTF) - THM](categories/cybersecurity/tryhackme-thm/challenges-ctf-thm.md)
     * [Web Application Security - PortSwigger Labs](categories/cybersecurity/web-application-security-portswigger-labs.md)
-  * [WINDOWS](categories/windows.md)
+  * [WINDOWS](categories/windows/README.md)
+    * [Windows Fundamentals](categories/windows/windows-fundamentals/README.md)
+      * [1. Introduction to Windows](categories/windows/windows-fundamentals/1.-introduction-to-windows.md)
 * [ARCHIVES](archives.md)
