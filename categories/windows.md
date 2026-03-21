@@ -1,5 +1,6 @@
 ---
 description: Welcome to the Windows Systems & Security Section.
+icon: windows
 layout:
   width: wide
   title:
