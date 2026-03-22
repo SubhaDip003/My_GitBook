@@ -26,4 +26,5 @@
   * [WINDOWS](categories/windows/README.md)
     * [Windows Fundamentals](categories/windows/windows-fundamentals/README.md)
       * [1. Introduction to Windows](categories/windows/windows-fundamentals/1.-introduction-to-windows.md)
+      * [2. Operating System Structure](categories/windows/windows-fundamentals/2.-operating-system-structure.md)
 * [ARCHIVES](archives.md)
