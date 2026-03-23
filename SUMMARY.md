@@ -28,4 +28,5 @@
       * [1. Introduction to Windows](categories/windows/windows-fundamentals/1.-introduction-to-windows.md)
       * [2. Operating System Structure](categories/windows/windows-fundamentals/2.-operating-system-structure.md)
       * [3. File System](categories/windows/windows-fundamentals/3.-file-system.md)
+      * [4. NTFS vs. Share Permissions](categories/windows/windows-fundamentals/4.-ntfs-vs.-share-permissions.md)
 * [ARCHIVES](archives.md)
