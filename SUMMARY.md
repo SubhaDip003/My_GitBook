@@ -32,4 +32,5 @@
       * [5. Windows Services & Processes](categories/windows/windows-fundamentals/5.-windows-services-and-processes.md)
       * [6. Service Permissions](categories/windows/windows-fundamentals/6.-service-permissions.md)
       * [7. Windows Sessions](categories/windows/windows-fundamentals/7.-windows-sessions.md)
+      * [8. Interacting with the Windows Operating System](categories/windows/windows-fundamentals/8.-interacting-with-the-windows-operating-system.md)
 * [ARCHIVES](archives.md)

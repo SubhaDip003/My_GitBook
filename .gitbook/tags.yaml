@@ -1,0 +1,12 @@
+- tag: cmd
+  label: cmd
+- tag: cmdlets
+  label: Cmdlets
+- tag: aliases
+  label: Aliases
+- tag: execution-policy
+  label: Execution Policy
+- tag: running-scripts
+  label: Running Scripts
+- tag: powershell
+  label: PowerShell
