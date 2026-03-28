@@ -34,4 +34,5 @@
       * [7. Windows Sessions](categories/windows/windows-fundamentals/7.-windows-sessions.md)
       * [8. Interacting with the Windows Operating System](categories/windows/windows-fundamentals/8.-interacting-with-the-windows-operating-system.md)
       * [9. Windows Management Instrumentation (WMI)](categories/windows/windows-fundamentals/9.-windows-management-instrumentation-wmi.md)
+      * [10. Microsoft Management Console (MMC)](categories/windows/windows-fundamentals/10.-microsoft-management-console-mmc.md)
 * [ARCHIVES](archives.md)
