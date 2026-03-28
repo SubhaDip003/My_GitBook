@@ -31,4 +31,5 @@
       * [4. NTFS vs. Share Permissions](categories/windows/windows-fundamentals/4.-ntfs-vs.-share-permissions.md)
       * [5. Windows Services & Processes](categories/windows/windows-fundamentals/5.-windows-services-and-processes.md)
       * [6. Service Permissions](categories/windows/windows-fundamentals/6.-service-permissions.md)
+      * [7. Windows Sessions](categories/windows/windows-fundamentals/7.-windows-sessions.md)
 * [ARCHIVES](archives.md)
