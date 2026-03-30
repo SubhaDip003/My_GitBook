@@ -36,4 +36,5 @@
       * [9. Windows Management Instrumentation (WMI)](categories/windows/windows-fundamentals/9.-windows-management-instrumentation-wmi.md)
       * [10. Microsoft Management Console (MMC)](categories/windows/windows-fundamentals/10.-microsoft-management-console-mmc.md)
       * [11. Windows Subsystem for Linux (WSL)](categories/windows/windows-fundamentals/11.-windows-subsystem-for-linux-wsl.md)
+      * [12. Desktop Experience vs. Server Core](categories/windows/windows-fundamentals/12.-desktop-experience-vs.-server-core.md)
 * [ARCHIVES](archives.md)
