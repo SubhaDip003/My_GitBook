@@ -38,4 +38,5 @@
       * [11. Windows Subsystem for Linux (WSL)](categories/windows/windows-fundamentals/11.-windows-subsystem-for-linux-wsl.md)
       * [12. Desktop Experience vs. Server Core](categories/windows/windows-fundamentals/12.-desktop-experience-vs.-server-core.md)
       * [13. Windows Security](categories/windows/windows-fundamentals/13.-windows-security.md)
+      * [Cheat Sheet](categories/windows/windows-fundamentals/cheat-sheet.md)
 * [ARCHIVES](archives.md)
