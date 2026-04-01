@@ -17,7 +17,7 @@
       * [Building Kali Linux Machine](categories/cybersecurity/active-directory-penetration-testing-lab-setup/building-kali-linux-machine.md)
     * [Active Directory Penetration Testing](categories/cybersecurity/active-directory-penetration-testing/README.md)
       * [Understanding Active Directory Infrastructure](categories/cybersecurity/active-directory-penetration-testing/understanding-active-directory-infrastructure.md)
-      * [Page 1](categories/cybersecurity/active-directory-penetration-testing/page-1.md)
+      * [1. Reconnaissance Techniques in Active Directory and Gaining Access](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access.md)
     * [Hack The Box - HTB](categories/cybersecurity/hack-the-box-htb/README.md)
       * [Machines - HTB](categories/cybersecurity/hack-the-box-htb/machines-htb.md)
     * [TryHackMe - THM](categories/cybersecurity/tryhackme-thm/README.md)
