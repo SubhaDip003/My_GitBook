@@ -28,75 +28,75 @@ Download Kali Linux ISO Image from [here](https://www.kali.org/get-kali/#kali-in
 
 Open VMware Workstation and click on "Create a New Virtual Machine":
 
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then Select "Typical" and click on Next:
 
-<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then select "I will install the Operating System Later" and click on Next:
 
-<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, select Operating System "Linux" and Version: "Debian 12 x64" and click on Next:
 
-<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, Enter machine name and select installation location:
 
-<figure><img src="../../../.gitbook/assets/5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then give storage and select "Store Virtual Disk as a Single File" and click on Next:
 
-<figure><img src="../../../.gitbook/assets/6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/6 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then click on "Customize Hardware.."
 
-<figure><img src="../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, Configure RAM "3-4 GB", Select ISO Image and Network Adapter "Bridged" then click on close and then click on Finish:
 
-<figure><img src="../../../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/8 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then click on "Power on this virtual machine":
 
-<figure><img src="../../../.gitbook/assets/9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/9 (1).png" alt=""><figcaption></figcaption></figure>
 
 Select "Graphical install" and press Enter:
 
-<figure><img src="../../../.gitbook/assets/10.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/10 (1).png" alt=""><figcaption></figcaption></figure>
 
 Select Language English and click on Continue:
 
-<figure><img src="../../../.gitbook/assets/11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/11 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then select location and click on Continue:
 
-<figure><img src="../../../.gitbook/assets/12.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/12 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then select keyboard and click on Continue:
 
-<figure><img src="../../../.gitbook/assets/13.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/13 (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, leave as default and click on Continue:
 
-<figure><img src="../../../.gitbook/assets/14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/14 (1).png" alt=""><figcaption></figcaption></figure>
 
 Again click on Continue:
 
-<figure><img src="../../../.gitbook/assets/15.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
 Then enter user name and click on Continue:
 
-<figure><img src="../../../.gitbook/assets/16.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/16 (2).png" alt=""><figcaption></figcaption></figure>
 
 Again enter username and click on Continue:
 
-<figure><img src="../../../.gitbook/assets/17.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/17 (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, enter password and click on Continue:
 
-<figure><img src="../../../.gitbook/assets/18.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/18 (1).png" alt=""><figcaption></figcaption></figure>
 
 Next page, select "Guided-use entire disk" and click on Continue:
 
