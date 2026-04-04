@@ -20,6 +20,7 @@
       * [1. Reconnaissance Techniques in Active Directory and Gaining Access](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/README.md)
         * [1.1 Enumeration and Information Gathering](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.1-enumeration-and-information-gathering.md)
         * [1.2 Initial Enumeration](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.2-initial-enumeration.md)
+        * [1.3 Enumeration with NetExec](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.3-enumeration-with-netexec.md)
     * [Hack The Box - HTB](categories/cybersecurity/hack-the-box-htb/README.md)
       * [Machines - HTB](categories/cybersecurity/hack-the-box-htb/machines-htb.md)
     * [TryHackMe - THM](categories/cybersecurity/tryhackme-thm/README.md)
