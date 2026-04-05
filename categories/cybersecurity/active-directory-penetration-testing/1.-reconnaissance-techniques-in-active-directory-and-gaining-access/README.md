@@ -1,4 +1,5 @@
 ---
+icon: user-hat-tie-magnifying-glass
 layout:
   width: wide
   title:

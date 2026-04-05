@@ -24,15 +24,15 @@ layout:
 
 Download Kali Linux ISO Image from [here](https://www.kali.org/get-kali/#kali-installer-images).
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Open VMware Workstation and click on "Create a New Virtual Machine":
 
-<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then Select "Typical" and click on Next:
 
-<figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then select "I will install the Operating System Later" and click on Next:
 

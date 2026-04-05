@@ -21,6 +21,8 @@
         * [1.1 Enumeration and Information Gathering](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.1-enumeration-and-information-gathering.md)
         * [1.2 Initial Enumeration](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.2-initial-enumeration.md)
         * [1.3 Enumeration with NetExec](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.3-enumeration-with-netexec.md)
+        * [1.4 Kerberos Pre-Authentication Not Required (AsRepRoasting)](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.4-kerberos-pre-authentication-not-required-asreproasting/README.md)
+          * [1.4.1 AsRepRoasting NetExec](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.4-kerberos-pre-authentication-not-required-asreproasting/1.4.1-asreproasting-netexec.md)
     * [Hack The Box - HTB](categories/cybersecurity/hack-the-box-htb/README.md)
       * [Machines - HTB](categories/cybersecurity/hack-the-box-htb/machines-htb.md)
     * [TryHackMe - THM](categories/cybersecurity/tryhackme-thm/README.md)
