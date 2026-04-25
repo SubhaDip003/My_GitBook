@@ -30,7 +30,7 @@ layout:
 
 ## 1. Lab Overview
 
-<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Detail overview of the lab.</td><td><a href="lab-overview.md">lab-overview.md</a></td><td><a href="../../../.gitbook/assets/LAB OVERVIEW.png">LAB OVERVIEW.png</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td>Detail overview of the lab.</td><td><a href="lab-overview.md">lab-overview.md</a></td><td><a href="../../../.gitbook/assets/LAB OVERVIEW (1).png">LAB OVERVIEW (1).png</a></td></tr></tbody></table>
 
 ## 2. Downloading & Installing VMware Workstation
 

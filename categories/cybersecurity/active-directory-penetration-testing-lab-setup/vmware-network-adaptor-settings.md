@@ -1,7 +1,11 @@
 ---
 description: Step-by-step guide to setting up VMware Network Adaptor.
+coverY: 0
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:

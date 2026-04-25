@@ -2,8 +2,12 @@
 description: >-
   Step-by-step guide to Download and Install VMware Workstation Pro in Windows
   11.
+coverY: 0
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:

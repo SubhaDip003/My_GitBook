@@ -2,8 +2,12 @@
 description: >-
   Step-by-step guide to install & Configure Windows Server 2022 DC02 (External
   Domain Controller on VMWare Workstation.
+coverY: 0
 layout:
   width: default
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:

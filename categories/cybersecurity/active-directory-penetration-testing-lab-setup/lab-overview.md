@@ -1,7 +1,11 @@
 ---
 description: Detail overview of the lab.
+coverY: 0
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:

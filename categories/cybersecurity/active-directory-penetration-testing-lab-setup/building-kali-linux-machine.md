@@ -2,8 +2,12 @@
 description: >-
   Step-by-step guide to install & Configure Kali Linux Machine on VMWare
   Workstation.
+coverY: 0
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
