@@ -1,8 +1,12 @@
 ---
 description: Explore and Learn
 icon: book-open-lines
+coverY: 0
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:

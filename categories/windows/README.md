@@ -1,8 +1,12 @@
 ---
 description: Welcome to the Windows Systems & Security Section.
 icon: windows
+coverY: 0
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
