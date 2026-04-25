@@ -1,8 +1,12 @@
 ---
 description: Step-by-step guide to build your AD Pen-Testing Lab on VMWare Workstation.
 icon: server
+coverY: 0
 layout:
   width: wide
+  cover:
+    visible: true
+    size: full
   title:
     visible: true
   description:
