@@ -27,4 +27,4 @@ layout:
 
 ## Windows Fundamentals
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h2>Windows Fundamentals</h2></td><td>Learn fundamentals required to work comfortably with the Windows operating system.</td><td><a href="./#windows-fundamentals">#windows-fundamentals</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h2>Windows Fundamentals</h2></td><td>Learn fundamentals required to work comfortably with the Windows operating system.</td><td><a href="windows-fundamentals/">windows-fundamentals</a></td></tr></tbody></table>
