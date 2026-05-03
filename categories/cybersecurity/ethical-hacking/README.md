@@ -25,5 +25,5 @@ Welcome to the Ethical Hacking section — a hands-on practical guide focused on
 
 ## All Topics
 
-<table data-view="cards"><thead><tr><th></th><th></th></tr></thead><tbody><tr><td><h2>Windows Hacking</h2></td><td>A practical Windows Hacking guide covering privilege escalation, UAC bypass, persistence, enumeration, exploitation techniques, and Windows security testing.</td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><h2>Windows Hacking</h2></td><td>A practical Windows Hacking guide covering privilege escalation, UAC bypass, persistence, enumeration, exploitation techniques, and Windows security testing.</td><td><a href="windows-hacking-and-uac-bypass.md">windows-hacking-and-uac-bypass.md</a></td><td><a href="../../../.gitbook/assets/Windows Hacking.png">Windows Hacking.png</a></td></tr></tbody></table>
 

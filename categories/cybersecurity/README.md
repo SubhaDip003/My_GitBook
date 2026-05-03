@@ -27,7 +27,7 @@ layout:
 
 ## Penetration Testing
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h2>Active Directory PenTesting</h2></td><td>Learn Techniques &#x26; Tools for Hacking and Pentesting Active Directory.</td><td><a href="active-directory-penetration-testing/">active-directory-penetration-testing</a></td></tr><tr><td><h2>Ethical Hacking</h2></td><td>A practical collection of Ethical Hacking notes covering cybersecurity concepts, attack techniques, tools, and hands-on learning for beginners to advanced learners.</td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><h2>Active Directory PenTesting</h2></td><td>Learn Techniques &#x26; Tools for Hacking and Pentesting Active Directory.</td><td><a href="../../.gitbook/assets/Windows Hacking.png">Windows Hacking.png</a></td><td><a href="active-directory-penetration-testing/">active-directory-penetration-testing</a></td></tr><tr><td><h2>Ethical Hacking</h2></td><td>A practical collection of Ethical Hacking notes covering cybersecurity concepts, attack techniques, tools, and hands-on learning for beginners to advanced learners.</td><td><a href="https://www.jeeviacademy.com/wp-content/uploads/2025/06/ethical-hacking-1024x683.jpg">https://www.jeeviacademy.com/wp-content/uploads/2025/06/ethical-hacking-1024x683.jpg</a></td><td><a href="ethical-hacking/">ethical-hacking</a></td></tr></tbody></table>
 
 ## Web Application Security
 
