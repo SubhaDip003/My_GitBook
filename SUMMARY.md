@@ -19,6 +19,7 @@
       * [Windows Hacking and UAC Bypass](categories/cybersecurity/ethical-hacking/windows-hacking-and-uac-bypass.md)
       * [Nessus: Network Vulnerability Scanner](categories/cybersecurity/ethical-hacking/nessus-network-vulnerability-scanner.md)
       * [Denial of Service Attack](categories/cybersecurity/ethical-hacking/denial-of-service-attack.md)
+      * [Wi-Fi Hacking](categories/cybersecurity/ethical-hacking/wi-fi-hacking.md)
     * [Active Directory Penetration Testing](categories/cybersecurity/active-directory-penetration-testing/README.md)
       * [Understanding Active Directory Infrastructure](categories/cybersecurity/active-directory-penetration-testing/understanding-active-directory-infrastructure.md)
       * [1. Reconnaissance Techniques in Active Directory and Gaining Access](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/README.md)
