@@ -25,6 +25,12 @@ layout:
 
 <figure><img src="../../../.gitbook/assets/Windows Hacking Attack Senario.png" alt=""><figcaption></figcaption></figure>
 
+> Run the following command on the target system to enable Network sharing:
+>
+> ```powershell
+> netsh advfirewall firewall set rule name="File and Printer Sharing (Echo Request - ICMPv4-In)" new enable=yes
+> ```
+
 First, we want to create a Reverse shell payload on attacker machine by using <mark style="color:$info;">`msfvenom`</mark>.
 
 ```bash
