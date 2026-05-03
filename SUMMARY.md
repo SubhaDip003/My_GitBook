@@ -17,6 +17,7 @@
       * [Building Kali Linux Machine](categories/cybersecurity/active-directory-penetration-testing-lab-setup/building-kali-linux-machine.md)
     * [Ethical Hacking](categories/cybersecurity/ethical-hacking/README.md)
       * [Windows Hacking and UAC Bypass](categories/cybersecurity/ethical-hacking/windows-hacking-and-uac-bypass.md)
+      * [Nessus: Network Vulnerability Scanner](categories/cybersecurity/ethical-hacking/nessus-network-vulnerability-scanner.md)
     * [Active Directory Penetration Testing](categories/cybersecurity/active-directory-penetration-testing/README.md)
       * [Understanding Active Directory Infrastructure](categories/cybersecurity/active-directory-penetration-testing/understanding-active-directory-infrastructure.md)
       * [1. Reconnaissance Techniques in Active Directory and Gaining Access](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/README.md)
