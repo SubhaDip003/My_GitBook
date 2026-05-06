@@ -32,19 +32,19 @@ Download Kali Linux ISO Image from [here](https://www.kali.org/get-kali/#kali-in
 
 Open VMware Workstation and click on "Create a New Virtual Machine":
 
-<figure><img src="../../../.gitbook/assets/1 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then Select "Typical" and click on Next:
 
-<figure><img src="../../../.gitbook/assets/2 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then select "I will install the Operating System Later" and click on Next:
 
-<figure><img src="../../../.gitbook/assets/3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, select Operating System "Linux" and Version: "Debian 12 x64" and click on Next:
 
-<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, Enter machine name and select installation location:
 
