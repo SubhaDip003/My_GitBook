@@ -29,7 +29,7 @@
         * [1.4 Kerberos Pre-Authentication Not Required (AsRepRoasting)](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.4-kerberos-pre-authentication-not-required-asreproasting/README.md)
           * [1.4.1 AsRepRoasting NetExec](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.4-kerberos-pre-authentication-not-required-asreproasting/1.4.1-asreproasting-netexec.md)
           * [1.4.2 AsRepRoasting with Impacket](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.4-kerberos-pre-authentication-not-required-asreproasting/1.4.2-asreproasting-with-impacket.md)
-          * [AsRepRoasting with Rubeus](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.4-kerberos-pre-authentication-not-required-asreproasting/asreproasting-with-rubeus.md)
+          * [1.4.3 AsRepRoasting with Rubeus](categories/cybersecurity/active-directory-penetration-testing/1.-reconnaissance-techniques-in-active-directory-and-gaining-access/1.4-kerberos-pre-authentication-not-required-asreproasting/1.4.3-asreproasting-with-rubeus.md)
     * [Hack The Box - HTB](categories/cybersecurity/hack-the-box-htb/README.md)
       * [Machines - HTB](categories/cybersecurity/hack-the-box-htb/machines-htb.md)
     * [TryHackMe - THM](categories/cybersecurity/tryhackme-thm/README.md)
